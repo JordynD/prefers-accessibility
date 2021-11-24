@@ -65,8 +65,28 @@ html {
 
 /**
  * =============
- * Write your “prefers” media queries here, between these two `stylelint` comments.
- * Unfortunately, Markbot, is a little too old to understand them. :(
+ * @@media (prefers-reduced-motion) {
+ .gear {
+ animation: none;
+}
+
+.gear-big {
+animation: none;
+}
+
+.gear-small {
+animation: none;
+}
+
+ }
+
+ @media (prefers-color-scheme: dark) {
+
+ main {
+ background-color: #111;
+}
+
+}
  * =============
  */
 
